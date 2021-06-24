@@ -14,12 +14,12 @@ int main()
 	file >> buf;
 	for (int i = 1; i <= (buf.size() - 1); i++)
 	{
-		if ((buf[i] == 'X') && (count % 3 == 0) or (buf[i-1] == 'Y') && (count % 3 == 1) or (buf[i] == 'Z') && (count % 3 == 2))
+		if ((buf[i] == 'X') && (count % 3 == 0) or (buf[i] == 'Y') && (count % 3 == 1) or (buf[i] == 'Z') && (count % 3 == 2))
 		{
 			count++;
 			m = max(count, m);
 		}
 		else count = 1;
 	}
-	count << m;
+	cout << m;
 }
